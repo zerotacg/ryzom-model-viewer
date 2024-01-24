@@ -1,0 +1,65 @@
+{
+  "asset": {
+    "version": "2.0"
+  },
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "TEXCOORD_0": 1
+          }
+        }
+      ],
+      "name": "12_AM"
+    }
+  ],
+  "nodes": [
+    {
+      "name": "12_AM",
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 65280,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 65280,
+      "type": "VEC2"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 783360
+    },
+    {
+      "buffer": 1,
+      "byteLength": 522240
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "12_AM.zonel.position.bin",
+      "byteLength": 783360
+    },
+    {
+      "uri": "12_AM.zonel.texcoord.bin",
+      "byteLength": 522240
+    }
+  ]
+}

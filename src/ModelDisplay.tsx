@@ -1,9 +1,12 @@
-import ModelUrl from '/ryzom/characters/shapes/ca_ship.shape.gltf?url'
 import {useGLTF} from '@react-three/drei'
 import {GroupProps} from "@react-three/fiber";
 
-export default function ModelDisplay(props: GroupProps) {
-    const {nodes, materials} = useGLTF(ModelUrl)
+export type ModelDisplayProps = GroupProps & {
+    url: string;
+}
+
+export default function ModelDisplay({url, ...props}: ModelDisplayProps) {
+    const {nodes, materials} = useGLTF(url)
 
     return (
         <group
