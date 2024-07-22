@@ -1,4 +1,5 @@
 import ModelUrl from '/ryzom/characters/shapes/ca_ship.shape.gltf?url'
+import MektoubUrl from '/ryzom/ryzom-model-viewer/public/ryzom/fauna/shapes/tr_mo_mektoub_selle.gltf?url'
 import ZoneUrl from '/ryzom/matis/zones/12_AM.zonel.gltf?url'
 import './App.css'
 import {Grid, OrbitControls} from '@react-three/drei'
@@ -26,6 +27,9 @@ function App() {
                                 <Link to="/">Home</Link>
                             </Nav.Item>
                             <Nav.Item>
+                                <Link to="/mektoub">Mektoub</Link>
+                            </Nav.Item>
+                            <Nav.Item>
                                 <Link to="/zone">Zone</Link>
                             </Nav.Item>
                         </Nav>
@@ -38,6 +42,8 @@ function App() {
                                 <Routes>
                                     <Route path="/"
                                            element={<ModelDisplay url={ModelUrl} rotation={[-Math.PI / 2, 0, 0]}/>}/>
+                                    <Route path="mektoub"
+                                           element={<ModelDisplay url={MektoubUrl} rotation={[-Math.PI / 2, 0, 0]}/>}/>
                                     <Route path="zone"
                                            element={<ModelDisplay url={ZoneUrl} rotation={[-Math.PI / 2, 0, 0]}
                                                                   position={[-80, 0, -80]}/>}/>
