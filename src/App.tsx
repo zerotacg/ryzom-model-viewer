@@ -1,5 +1,5 @@
 import ModelUrl from '/ryzom/characters/shapes/ca_ship.shape.gltf?url'
-import MektoubUrl from '/ryzom/ryzom-model-viewer/public/ryzom/fauna/shapes/tr_mo_mektoub_selle.gltf?url'
+import MektoubUrl from '/ryzom/fauna/shapes/tr_mo_mektoub_selle.gltf?url'
 import ZoneUrl from '/ryzom/matis/zones/12_AM.zonel.gltf?url'
 import './App.css'
 import {Grid, OrbitControls} from '@react-three/drei'
