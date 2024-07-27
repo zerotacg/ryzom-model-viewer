@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import {BrowserRouter, LinkProps, NavLink, Route, Routes} from 'react-router-dom';
+import LoaderProgress from "./LoaderProgress.tsx";
 import ModelDisplay from './ModelDisplay.tsx';
 
 function Link(props: LinkProps) {
@@ -38,7 +39,7 @@ function App() {
                         <Canvas className="h-100">
                             <ambientLight intensity={Math.PI / 2}/>
                             <directionalLight position={[10, 0, 0]} intensity={Math.PI * 2}/>
-                            <Suspense fallback={null}>
+                            <Suspense fallback={<LoaderProgress />}>
                                 <Routes>
                                     <Route path="/"
                                            element={<ModelDisplay url={ModelUrl} rotation={[-Math.PI / 2, 0, 0]}/>}/>

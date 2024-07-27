@@ -8,8 +8,8 @@ export type ModelDisplayProps = GroupProps & {
 export default function ModelDisplay({url, ...props}: ModelDisplayProps) {
     const {nodes, materials} = useGLTF(url)
 
-    // alternatively a primitive could be used, but switching doesn't work with that
-    // <primitive object={gltf.scene} scale={0.4} />
+    // alternatively a primitive could be used, but routing doesn't work with that
+    // return (<primitive object={scene} scale={0.4} {...props} />);
 
     return (
         <group
